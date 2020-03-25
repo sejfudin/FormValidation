@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+  
+  
+    <title>BScomputers</title>
+</head>
+<body>
+   
+   
+    <!--Form-->
+    <form id="form" >
+        <label for="name">IME I PREZIME</label>
+        <input type="text" id="name" placeholder="Vaše ime i prezime"></br>
+        <p class="error">*Unesite Vaše ime i prezime!</p>
+        <label for="adress">ADRESA</label>
+        <input type="text" id="adress" placeholder="Vaša adresa"></br>
+        <p class="error">*Unesite Vašu adresu!</p>
+        <label for="phone">TELEFON</label>
+        <input type="text" id="phone" placeholder="000 111 222" onkeyup="phoneValidation()"></br>
+        <p class="error">*Unesite Vaš telefon!</p>
+        <p id="phone-validation"></p>
+        <label for="email">E-MAIL</label>
+        <input type="text" id="email"  placeholder="Vaš e-mail" onkeyup="emailValidation()"></br>
+        <p class="error">*Unesite Vašu E-mail adresu!</p>
+        <p id="mail-validation"></p>
+        
+    <!--Button-->
+        <input type="send" value="NARUČI" id="btn">
+    </form>
+    <!--Form end-->
+
+</body>
+
+<!--Link to JS file-->
+<script src="validationForm.js"></script>
+</html>
